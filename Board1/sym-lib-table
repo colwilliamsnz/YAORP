@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "WattleLabs")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/WattleLabs.kicad_sym")(options "")(descr ""))
+)

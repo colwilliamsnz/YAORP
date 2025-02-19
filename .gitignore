@@ -1,0 +1,19 @@
+# Grrr macOS
+.DS_Store
+
+# KiCad
+*-backups
+\#auto_saved_files#
+*.xml
+*.lck
+*.lib
+*.kicad_sch-bak
+fp-info-cache
+
+# Misc
+*.bak
+
+# Executables
+*.exe
+*.out
+*.app
