@@ -454,12 +454,12 @@
 				)
 			)
 		)
-		(symbol "Sensor_Temperature:MAX31855KASA"
+		(symbol "MAX31855KASA_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U2"
-				(at -7.62 9.144 0)
+			(property "Reference" "U"
+				(at -7.62 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -468,7 +468,7 @@
 				)
 			)
 			(property "Value" "MAX31855KASA"
-				(at 1.524 -9.398 0)
+				(at 1.27 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -477,43 +477,37 @@
 				)
 			)
 			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 25.4 -8.89 0)
+				(at 2.54 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf"
-				(at 0 0 0)
+				(at 2.54 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "Cold Junction K-type Termocouple Interface, SPI, SO8"
-				(at 0 0 0)
+			(property "Description" "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8"
+				(at 2.54 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Supplier" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Cold Junction Termocouple Interface SPI"
+			(property "ki_keywords" "Maxim"
 				(at 0 0 0)
 				(effects
 					(font
@@ -531,10 +525,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "MAX31855KASA_0_1"
+			(symbol "MAX31855KASA_1_0_1"
 				(rectangle
 					(start -7.62 7.62)
-					(end 7.62 -7.62)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -544,9 +538,9 @@
 					)
 				)
 			)
-			(symbol "MAX31855KASA_1_1"
+			(symbol "MAX31855KASA_1_1_1"
 				(pin power_in line
-					(at 0 -10.16 90)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -602,7 +596,7 @@
 				(pin power_in line
 					(at 0 10.16 270)
 					(length 2.54)
-					(name "V_CC"
+					(name "V_{CC}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -671,10 +665,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 10.16 -6.35 180)
-					(length 2.54)
-					(name "DNC"
+				(pin no_connect line
+					(at -7.62 5.08 0)
+					(length 2.54) hide
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -909,30 +903,26 @@
 		)
 	)
 	(junction
-		(at 140.335 38.735)
+		(at 120.65 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e105aba9-4a9d-4665-a733-07440b8c533c")
+		(uuid "1e682433-64a3-40d8-a1fd-0718b6eddca4")
 	)
 	(junction
-		(at 122.555 55.245)
+		(at 139.7 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f6a22085-8aa8-47ba-be1b-bb082a1d0965")
+		(uuid "f2722687-473a-4279-ad52-1ba03f01b5ef")
 	)
 	(junction
-		(at 122.555 50.165)
+		(at 120.65 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fb44847c-8286-4e6e-b456-3ffbfec48641")
-	)
-	(no_connect
-		(at 150.495 59.055)
-		(uuid "a24c1b91-cd28-429a-a242-efba7a66464e")
+		(uuid "f9b9f533-fb70-4c37-9215-346cd7522821")
 	)
 	(wire
 		(pts
-			(xy 127.635 55.245) (xy 130.175 55.245)
+			(xy 127 54.61) (xy 129.54 54.61)
 		)
 		(stroke
 			(width 0)
@@ -942,27 +932,27 @@
 	)
 	(wire
 		(pts
-			(xy 140.335 37.465) (xy 140.335 38.735)
+			(xy 120.65 49.53) (xy 127 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "089adfe8-546d-402b-b225-c90f5ab8e536")
+		(uuid "13e66042-18a4-4289-9c89-2a4facdf7c63")
 	)
 	(wire
 		(pts
-			(xy 112.395 50.165) (xy 112.395 51.435)
+			(xy 120.65 55.88) (xy 120.65 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14a97c04-6769-44b7-a42d-62dda46f8004")
+		(uuid "15c10b25-8c35-4cb8-b316-3873dba074df")
 	)
 	(wire
 		(pts
-			(xy 140.335 38.735) (xy 140.335 42.545)
+			(xy 139.7 36.83) (xy 139.7 39.37)
 		)
 		(stroke
 			(width 0)
@@ -972,37 +962,37 @@
 	)
 	(wire
 		(pts
-			(xy 130.175 50.165) (xy 128.905 50.165)
+			(xy 139.7 39.37) (xy 139.7 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "17c7be43-c4df-4135-a02a-706389cf9049")
+		(uuid "33b820ad-3d33-44a9-97d8-9b5423cb0746")
 	)
 	(wire
 		(pts
-			(xy 114.935 50.165) (xy 112.395 50.165)
+			(xy 152.4 46.99) (xy 149.86 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "351963c8-3e94-4245-bfd8-6078b4412f73")
+		(uuid "3eaacdd5-071a-4eb8-ad2f-a8e15d480da7")
 	)
 	(wire
 		(pts
-			(xy 120.015 50.165) (xy 122.555 50.165)
+			(xy 114.3 49.53) (xy 110.49 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4485f17f-5709-4442-95f6-c69baba78bb1")
+		(uuid "4753e555-8a71-4fc2-95de-992009366271")
 	)
 	(wire
 		(pts
-			(xy 120.015 55.245) (xy 122.555 55.245)
+			(xy 119.38 55.88) (xy 120.65 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1012,7 +1002,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.905 53.975) (xy 123.825 53.975)
+			(xy 129.54 53.34) (xy 124.46 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1022,17 +1012,27 @@
 	)
 	(wire
 		(pts
-			(xy 150.495 55.245) (xy 151.765 55.245)
+			(xy 170.18 44.45) (xy 170.18 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f2a69f6-5e12-480f-a532-21c89f7760bb")
+		(uuid "62d45652-9279-4cf8-83b2-c1ca559c6409")
 	)
 	(wire
 		(pts
-			(xy 114.935 55.245) (xy 112.395 55.245)
+			(xy 120.65 55.88) (xy 124.46 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66d9aa32-ca77-49ff-a675-a062a8734ffd")
+	)
+	(wire
+		(pts
+			(xy 114.3 55.88) (xy 110.49 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1042,7 +1042,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.905 50.165) (xy 128.905 53.975)
+			(xy 129.54 49.53) (xy 129.54 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1052,7 +1052,7 @@
 	)
 	(wire
 		(pts
-			(xy 127.635 50.165) (xy 127.635 55.245)
+			(xy 127 49.53) (xy 127 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1062,17 +1062,27 @@
 	)
 	(wire
 		(pts
-			(xy 123.825 55.245) (xy 122.555 55.245)
+			(xy 110.49 49.53) (xy 110.49 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "93e1ae6d-7821-477a-ab2d-e6b397be0049")
+		(uuid "8ea8f7f3-423b-47e8-a246-a6197105b852")
 	)
 	(wire
 		(pts
-			(xy 123.825 53.975) (xy 123.825 55.245)
+			(xy 152.4 54.61) (xy 149.86 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4b0f80f-8a59-4e28-9654-800f10b002e8")
+	)
+	(wire
+		(pts
+			(xy 124.46 53.34) (xy 124.46 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1082,27 +1092,37 @@
 	)
 	(wire
 		(pts
-			(xy 150.495 50.165) (xy 151.765 50.165)
+			(xy 119.38 49.53) (xy 120.65 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7915f2d-270d-4015-aefb-f0840fdb0aa5")
+		(uuid "d4552ad3-ff19-4720-b7ec-b7ad93e977dc")
 	)
 	(wire
 		(pts
-			(xy 140.335 38.735) (xy 170.815 38.735)
+			(xy 152.4 49.53) (xy 149.86 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c5e587cc-b06a-4d50-955e-17cf92eacbc8")
+		(uuid "e582370b-e09e-4fba-bab9-24b96cf966a0")
 	)
 	(wire
 		(pts
-			(xy 112.395 55.245) (xy 112.395 53.975)
+			(xy 139.7 39.37) (xy 170.18 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eab61cd7-a19b-4fd8-8a96-22c3b3bfbde1")
+	)
+	(wire
+		(pts
+			(xy 110.49 55.88) (xy 110.49 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1112,23 +1132,13 @@
 	)
 	(wire
 		(pts
-			(xy 150.495 47.625) (xy 151.765 47.625)
+			(xy 139.7 59.69) (xy 139.7 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f41b71d6-8555-4a53-b764-b9d0501dd61d")
-	)
-	(wire
-		(pts
-			(xy 122.555 50.165) (xy 127.635 50.165)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe4466b3-6999-4d9c-872b-8b0f2a3b3ceb")
+		(uuid "f717a915-1c1b-4276-8fa2-9f1203f149fb")
 	)
 	(text_box "DESIGN NOTE:\n\n1. Capacitors are those recommended in MAX31855 datasheet.\n2. Firmware PoC tested with MAX6675 but MAX31855 is newer part (NOT pin compatible)\n3. Ferrites added in v1.1 to deal with potential EMI issues (MAX31855 is sensitive)."
 		(exclude_from_sim no)
@@ -1172,7 +1182,7 @@
 	)
 	(global_label "THERMO_MISO"
 		(shape input)
-		(at 151.765 50.165 0)
+		(at 152.4 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1182,7 +1192,7 @@
 		)
 		(uuid "721abb31-2ab0-44fb-aacd-eb2226c6cf0b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.1588 50.165 0)
+			(at 167.7938 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1194,7 +1204,7 @@
 	)
 	(global_label "THERMO_CS"
 		(shape input)
-		(at 151.765 55.245 0)
+		(at 152.4 54.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1204,7 +1214,7 @@
 		)
 		(uuid "7c64c994-4470-457c-af5d-0e41d7ca5a1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.0421 55.245 0)
+			(at 165.6771 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1216,7 +1226,7 @@
 	)
 	(global_label "THERMO_SCK"
 		(shape input)
-		(at 151.765 47.625 0)
+		(at 152.4 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1226,7 +1236,7 @@
 		)
 		(uuid "8ef6c100-7c59-45a6-9cc8-0bcd02b4eefb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.3121 47.625 0)
+			(at 166.9471 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1238,7 +1248,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead_Small")
-		(at 117.475 50.165 90)
+		(at 116.84 49.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1246,7 +1256,7 @@
 		(dnp no)
 		(uuid "0be15206-7cd9-48a4-ac5d-7713718c71f4")
 		(property "Reference" "FB1"
-			(at 117.475 47.117 90)
+			(at 116.84 46.482 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1254,7 +1264,7 @@
 			)
 		)
 		(property "Value" "470R 1LN"
-			(at 117.4369 46.355 90)
+			(at 116.8019 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1263,7 +1273,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 117.475 51.943 90)
+			(at 116.84 51.308 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1272,7 +1282,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 117.475 50.165 0)
+			(at 116.84 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1281,7 +1291,7 @@
 			)
 		)
 		(property "Description" "FERRITE BEAD 470 OHM 0603 1LN"
-			(at 117.475 50.165 0)
+			(at 116.84 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1290,7 +1300,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 117.475 50.165 0)
+			(at 116.84 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1299,7 +1309,7 @@
 			)
 		)
 		(property "Digikey_PN" "BLM18PG471SN1D"
-			(at 117.475 50.165 0)
+			(at 116.84 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1324,7 +1334,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 122.555 52.705 0)
+		(at 120.65 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1332,7 +1342,7 @@
 		(dnp no)
 		(uuid "1748cbe2-d5da-4dac-ac35-a741767718cd")
 		(property "Reference" "C10"
-			(at 120.523 48.641 0)
+			(at 120.65 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1341,7 +1351,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 120.777 56.769 0)
+			(at 120.65 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1350,7 +1360,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 122.555 52.705 0)
+			(at 120.65 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1359,7 +1369,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 122.555 52.705 0)
+			(at 120.65 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1368,7 +1378,7 @@
 			)
 		)
 		(property "Description" "CAP CER 10000PF 16V X7R 0603"
-			(at 122.555 52.705 0)
+			(at 120.65 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1377,7 +1387,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.co.nz/en/products/detail/yageo/CC0603KRX7R7BB103/5883753"
-			(at 122.555 52.705 0)
+			(at 120.65 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1386,7 +1396,7 @@
 			)
 		)
 		(property "Digikey_PN" "311-3369-1-ND"
-			(at 122.555 52.705 0)
+			(at 120.65 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1410,114 +1420,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Temperature:MAX31855KASA")
-		(at 140.335 52.705 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "31c06ccb-10c1-4f50-a0ec-471131bfa34c")
-		(property "Reference" "U3"
-			(at 132.715 43.561 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MAX31855KASA"
-			(at 141.859 62.103 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 165.735 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf"
-			(at 140.335 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cold Junction K-type Termocouple Interface, SPI, SO8"
-			(at 140.335 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "https://www.digikey.co.nz/en/products/detail/analog-devices-inc-maxim-integrated/MAX31855KASA/2591564"
-			(at 140.335 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey_PN" "MAX31855KASA+-ND"
-			(at 140.335 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "561ccf84-e29b-4aca-bd9d-4f0544a1661d")
-		)
-		(pin "2"
-			(uuid "9586491a-13c1-4c8a-923a-9f39a04f359b")
-		)
-		(pin "3"
-			(uuid "e53dd301-756c-45ec-9f8f-ed9c4085119e")
-		)
-		(pin "5"
-			(uuid "ab767546-a342-4645-b99f-52b90489ab19")
-		)
-		(pin "7"
-			(uuid "9ce4fa6d-220e-4e1b-ae8d-a4425de27fe6")
-		)
-		(pin "6"
-			(uuid "87628969-ac91-478f-989c-af626155363a")
-		)
-		(pin "1"
-			(uuid "c883ebc2-6f6f-4c22-b122-cfb770eba1c5")
-		)
-		(pin "8"
-			(uuid "1165ddc2-8b51-4ac2-bb68-3991118c6a98")
-		)
-		(instances
-			(project "Board1"
-				(path "/025ade93-30a9-4247-8f8c-ea2eaab4b489/fbe3accb-2241-477d-83e8-515ea311b973"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:FerriteBead_Small")
-		(at 117.475 55.245 90)
+		(at 116.84 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1525,7 +1429,7 @@
 		(dnp no)
 		(uuid "372a6e2b-0f85-4541-a181-898a4ebcf86a")
 		(property "Reference" "FB2"
-			(at 117.475 58.801 90)
+			(at 116.84 59.436 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1533,7 +1437,7 @@
 			)
 		)
 		(property "Value" "470R 1LN"
-			(at 117.4369 51.435 90)
+			(at 116.8019 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1542,7 +1446,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 117.475 57.023 90)
+			(at 116.84 57.658 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1551,7 +1455,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 117.475 55.245 0)
+			(at 116.84 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1560,7 +1464,7 @@
 			)
 		)
 		(property "Description" "FERRITE BEAD 470 OHM 0603 1LN"
-			(at 117.475 55.245 0)
+			(at 116.84 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1569,7 +1473,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 117.475 55.245 0)
+			(at 116.84 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1578,7 +1482,7 @@
 			)
 		)
 		(property "Digikey_PN" "BLM18PG471SN1D"
-			(at 117.475 55.245 0)
+			(at 116.84 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1603,7 +1507,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 107.315 51.435 0)
+		(at 105.41 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1611,7 +1515,7 @@
 		(dnp no)
 		(uuid "492ea1dc-a31d-4f49-b5bf-32bfe91fb928")
 		(property "Reference" "J3"
-			(at 108.331 56.515 0)
+			(at 106.426 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1620,7 +1524,7 @@
 			)
 		)
 		(property "Value" "Thermo"
-			(at 110.617 58.547 0)
+			(at 107.95 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1628,7 +1532,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 107.315 51.435 0)
+			(at 105.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1637,7 +1541,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.315 51.435 0)
+			(at 105.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1646,7 +1550,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 107.315 51.435 0)
+			(at 105.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1655,7 +1559,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 107.315 51.435 0)
+			(at 105.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1664,7 +1568,7 @@
 			)
 		)
 		(property "Digikey_PN" ""
-			(at 107.315 51.435 0)
+			(at 105.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1688,8 +1592,118 @@
 		)
 	)
 	(symbol
+		(lib_name "MAX31855KASA_1")
+		(lib_id "Sensor_Temperature:MAX31855KASA")
+		(at 139.7 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a248a9e-a7d5-4a5e-9dc6-880fecc1896a")
+		(property "Reference" "U3"
+			(at 132.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31855KASA"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf"
+			(at 142.24 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8"
+			(at 142.24 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey_PN" ""
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "73317eaf-7054-4ae0-ae76-55f46fc7b390")
+		)
+		(pin "7"
+			(uuid "e0db45c4-3131-451b-9f93-3e7e300200dc")
+		)
+		(pin "4"
+			(uuid "c3a36b19-ef0a-494e-bc83-2447c6b9976e")
+		)
+		(pin "5"
+			(uuid "4213f928-55cc-4bfc-a3b5-0906cf8351c9")
+		)
+		(pin "8"
+			(uuid "99c1dfb1-7419-4da7-a817-575f53efc405")
+		)
+		(pin "2"
+			(uuid "3ef0e017-9c93-4c8f-9573-cc6a2a8e5bc9")
+		)
+		(pin "3"
+			(uuid "281e1777-2c86-4873-abfa-3a38d3acb80e")
+		)
+		(pin "1"
+			(uuid "92e5239b-00f6-4380-b450-d82f9f20666d")
+		)
+		(instances
+			(project ""
+				(path "/025ade93-30a9-4247-8f8c-ea2eaab4b489/fbe3accb-2241-477d-83e8-515ea311b973"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 140.335 62.865 0)
+		(at 139.7 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1697,7 +1711,7 @@
 		(dnp no)
 		(uuid "7fd872e9-3c5e-498e-bcbd-cad484064b03")
 		(property "Reference" "#PWR017"
-			(at 140.335 69.215 0)
+			(at 139.7 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1706,7 +1720,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.335 66.675 0)
+			(at 139.7 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1714,7 +1728,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.335 62.865 0)
+			(at 139.7 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1723,7 +1737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.335 62.865 0)
+			(at 139.7 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1732,7 +1746,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.335 62.865 0)
+			(at 139.7 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1754,7 +1768,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 140.335 37.465 0)
+		(at 139.7 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1762,7 +1776,7 @@
 		(dnp no)
 		(uuid "91867cb6-dd00-4455-b2f1-f8ca2332e54e")
 		(property "Reference" "#PWR06"
-			(at 140.335 41.275 0)
+			(at 139.7 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1771,7 +1785,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 140.335 33.401 0)
+			(at 139.7 32.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1779,7 +1793,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.335 37.465 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1788,7 +1802,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.335 37.465 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1797,7 +1811,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 140.335 37.465 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1819,7 +1833,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 170.815 43.815 0)
+		(at 170.18 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1827,7 +1841,7 @@
 		(dnp no)
 		(uuid "ca796154-d9c6-4429-a3b9-1c923d5e44eb")
 		(property "Reference" "#PWR025"
-			(at 170.815 50.165 0)
+			(at 170.18 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1836,7 +1850,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.815 47.879 0)
+			(at 170.18 47.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1844,7 +1858,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.815 43.815 0)
+			(at 170.18 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1853,7 +1867,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.815 43.815 0)
+			(at 170.18 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1862,7 +1876,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.815 43.815 0)
+			(at 170.18 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1884,7 +1898,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 170.815 41.275 0)
+		(at 170.18 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1892,7 +1906,7 @@
 		(dnp no)
 		(uuid "df0ab8ef-51ed-4c06-bb8e-bfdf85b1142c")
 		(property "Reference" "C9"
-			(at 173.355 40.0112 0)
+			(at 172.72 40.6462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1901,7 +1915,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 173.355 42.037 0)
+			(at 172.72 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1910,7 +1924,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 170.815 41.275 0)
+			(at 170.18 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1919,7 +1933,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.815 41.275 0)
+			(at 170.18 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,7 +1942,7 @@
 			)
 		)
 		(property "Description" "0.1 µF ±20% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 170.815 41.275 0)
+			(at 170.18 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1937,7 +1951,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 170.815 41.275 0)
+			(at 170.18 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1946,7 +1960,7 @@
 			)
 		)
 		(property "Digikey_PN" "399-C0603C104K4RACTUCT-ND"
-			(at 170.815 41.275 0)
+			(at 170.18 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1025,26 +1025,52 @@
 		)
 	)
 	(junction
-		(at 125.095 66.04)
+		(at 124.46 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "77771a71-8c94-4224-8dfb-59d6e4873109")
+		(uuid "49131ce1-6fb0-4dde-8c0f-35d00d0f0532")
 	)
 	(junction
-		(at 112.395 54.61)
+		(at 135.89 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9b62b957-b89b-41d8-80b3-b9401f2aa8e0")
+		(uuid "77cfa683-885f-495e-bd99-2ed13e5dd8d3")
 	)
 	(junction
-		(at 136.525 54.61)
+		(at 111.76 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f91fc296-d16a-4f3a-b6cf-45f4ec649938")
+		(uuid "8e5a8cec-19a8-4c50-b865-b2fb1c62f0b8")
+	)
+	(junction
+		(at 111.76 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6662aa8-5313-4f40-8299-fecdb80ba870")
 	)
 	(wire
 		(pts
-			(xy 125.095 66.04) (xy 125.095 62.23)
+			(xy 124.46 66.04) (xy 135.89 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0820369f-c834-4886-bff3-d10d0a93861d")
+	)
+	(wire
+		(pts
+			(xy 182.88 57.15) (xy 182.88 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fa75fdd-7cdd-44e9-8964-fb58ad01fcc1")
+	)
+	(wire
+		(pts
+			(xy 124.46 66.04) (xy 124.46 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1054,47 +1080,27 @@
 	)
 	(wire
 		(pts
-			(xy 112.395 50.8) (xy 112.395 54.61)
+			(xy 135.89 54.61) (xy 132.08 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "146b0881-5730-4db7-99b7-f70fde1b86d7")
+		(uuid "29d674f3-df46-4862-bd11-25011d286c61")
 	)
 	(wire
 		(pts
-			(xy 136.525 66.04) (xy 125.095 66.04)
+			(xy 111.76 50.8) (xy 111.76 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2725de24-3316-4c86-998a-c3991714ac62")
+		(uuid "38a63853-abc9-4eb0-95b1-ce537376f294")
 	)
 	(wire
 		(pts
-			(xy 112.395 54.61) (xy 117.475 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fc0c6f4-198d-414f-a7f6-44d1a287d65c")
-	)
-	(wire
-		(pts
-			(xy 142.875 54.61) (xy 136.525 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43e18b00-24d1-4662-9349-1b7306c53795")
-	)
-	(wire
-		(pts
-			(xy 136.525 54.61) (xy 136.525 57.15)
+			(xy 135.89 54.61) (xy 135.89 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1104,37 +1110,17 @@
 	)
 	(wire
 		(pts
-			(xy 112.395 54.61) (xy 112.395 57.15)
+			(xy 182.88 50.8) (xy 182.88 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "61a6c60d-ab75-4422-b737-89f4bb77c56d")
+		(uuid "585f21c7-9fe8-45e3-8bbe-2e49f06ad546")
 	)
 	(wire
 		(pts
-			(xy 183.515 57.15) (xy 183.515 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "632f3255-d81c-42ff-be2c-f382e3e630bd")
-	)
-	(wire
-		(pts
-			(xy 183.515 66.04) (xy 183.515 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7114690a-d178-4905-a711-00f5821dc7cd")
-	)
-	(wire
-		(pts
-			(xy 136.525 62.23) (xy 136.525 66.04)
+			(xy 135.89 62.23) (xy 135.89 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1144,7 +1130,27 @@
 	)
 	(wire
 		(pts
-			(xy 112.395 66.04) (xy 125.095 66.04)
+			(xy 111.76 54.61) (xy 116.84 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b15e7cc-2583-4e1e-9244-26dc0db96478")
+	)
+	(wire
+		(pts
+			(xy 135.89 54.61) (xy 142.24 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c67ec28-a5ca-443f-b88b-d190b3c3533d")
+	)
+	(wire
+		(pts
+			(xy 111.76 66.04) (xy 124.46 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1154,17 +1160,17 @@
 	)
 	(wire
 		(pts
-			(xy 136.525 54.61) (xy 132.715 54.61)
+			(xy 182.88 66.04) (xy 182.88 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b73b9d7f-887f-490e-b004-4cee71e08285")
+		(uuid "9ff5ff3e-3ad1-49f2-adf7-88c4c44c4b1a")
 	)
 	(wire
 		(pts
-			(xy 136.525 50.8) (xy 136.525 54.61)
+			(xy 135.89 50.8) (xy 135.89 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1174,7 +1180,7 @@
 	)
 	(wire
 		(pts
-			(xy 112.395 62.23) (xy 112.395 66.04)
+			(xy 111.76 62.23) (xy 111.76 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1184,23 +1190,23 @@
 	)
 	(wire
 		(pts
-			(xy 125.095 66.04) (xy 125.095 68.58)
+			(xy 111.76 66.04) (xy 111.76 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef5e4052-c355-405f-aaab-d547a361f4c3")
+		(uuid "eb61d1cb-f7c5-415e-aa94-b3af9e737f89")
 	)
 	(wire
 		(pts
-			(xy 183.515 50.8) (xy 183.515 52.07)
+			(xy 111.76 54.61) (xy 111.76 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ffa9cd55-66be-402d-a2bd-073b36400c5f")
+		(uuid "fdaac209-8d6e-41c2-afd6-0844cd58e6b6")
 	)
 	(text_box "DESIGN NOTE:\n\nV_{IN}: 2.5V-16V (20V abs max)\n\nV_{OUT}: fixed 3.3V, max 1A\n\nV_{DROPOUT}: 0.6 @ 800mA\n\nI_{Q}: 60uA (~1.5uA in shutdown)"
 		(exclude_from_sim no)
@@ -1268,7 +1274,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 183.515 67.31 0)
+		(at 182.88 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1276,7 +1282,7 @@
 		(dnp no)
 		(uuid "01afe4cf-ddaa-4295-9ae5-0f005c5b805d")
 		(property "Reference" "#PWR036"
-			(at 183.515 73.66 0)
+			(at 182.88 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1285,7 +1291,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 183.515 71.374 0)
+			(at 182.88 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1293,7 +1299,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 183.515 67.31 0)
+			(at 182.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1302,7 +1308,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 183.515 67.31 0)
+			(at 182.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1311,7 +1317,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 183.515 67.31 0)
+			(at 182.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1333,7 +1339,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.095 68.58 0)
+		(at 111.76 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1341,7 +1347,7 @@
 		(dnp no)
 		(uuid "05802882-0a18-4ccb-ab29-6baa11567ba6")
 		(property "Reference" "#PWR010"
-			(at 125.095 74.93 0)
+			(at 111.76 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1350,7 +1356,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.095 72.39 0)
+			(at 111.76 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1358,7 +1364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.095 68.58 0)
+			(at 111.76 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1367,7 +1373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.095 68.58 0)
+			(at 111.76 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1376,7 +1382,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.095 68.58 0)
+			(at 111.76 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1398,7 +1404,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 112.395 50.8 0)
+		(at 111.76 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1406,7 +1412,7 @@
 		(dnp no)
 		(uuid "05b2a422-0325-4dd1-8a68-49759221ea73")
 		(property "Reference" "#PWR09"
-			(at 112.395 54.61 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1415,7 +1421,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 112.395 46.736 0)
+			(at 111.76 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1423,7 +1429,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 112.395 50.8 0)
+			(at 111.76 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1432,7 +1438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 112.395 50.8 0)
+			(at 111.76 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1441,7 +1447,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 112.395 50.8 0)
+			(at 111.76 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1463,7 +1469,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 136.525 59.69 0)
+		(at 135.89 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1471,7 +1477,7 @@
 		(dnp no)
 		(uuid "138492e1-532b-40cd-b895-c2846a850ac8")
 		(property "Reference" "C4"
-			(at 137.541 57.912 0)
+			(at 136.906 57.912 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1480,7 +1486,7 @@
 			)
 		)
 		(property "Value" "2.2u"
-			(at 137.541 61.468 0)
+			(at 136.906 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1489,7 +1495,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 136.525 59.69 0)
+			(at 135.89 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1498,7 +1504,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 136.525 59.69 0)
+			(at 135.89 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1507,7 +1513,7 @@
 			)
 		)
 		(property "Description" "2.2 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
-			(at 136.525 59.69 0)
+			(at 135.89 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,7 +1522,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.co.nz/en/products/detail/samsung-electro-mechanics/CL10A225KO8NNNC/3886698"
-			(at 136.525 59.69 0)
+			(at 135.89 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,7 +1531,7 @@
 			)
 		)
 		(property "Digikey_PN" "1276-1040-1-ND"
-			(at 136.525 59.69 0)
+			(at 135.89 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1550,7 +1556,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 183.515 62.23 90)
+		(at 182.88 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1558,7 +1564,7 @@
 		(dnp no)
 		(uuid "526cb96b-42c1-4b62-a9c1-79aca4f22758")
 		(property "Reference" "D1"
-			(at 186.309 62.23 90)
+			(at 185.674 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1567,7 +1573,7 @@
 			)
 		)
 		(property "Value" "Power"
-			(at 186.309 64.262 90)
+			(at 185.674 64.262 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1576,7 +1582,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 183.515 62.23 0)
+			(at 182.88 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1585,7 +1591,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 183.515 62.23 0)
+			(at 182.88 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1594,7 +1600,7 @@
 			)
 		)
 		(property "Description" "Red 625nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 183.515 62.23 0)
+			(at 182.88 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1603,7 +1609,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 183.515 62.23 0)
+			(at 182.88 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1612,7 +1618,7 @@
 			)
 		)
 		(property "Digikey_PN" "732-4978-1-ND"
-			(at 183.515 62.23 0)
+			(at 182.88 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1637,7 +1643,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 183.515 54.61 180)
+		(at 182.88 54.61 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1645,7 +1651,7 @@
 		(dnp no)
 		(uuid "538f7e32-67ad-4eb7-b134-db2f5027c4e4")
 		(property "Reference" "R3"
-			(at 187.325 53.848 0)
+			(at 186.69 53.848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1653,7 +1659,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 187.071 55.626 0)
+			(at 186.436 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1661,7 +1667,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 183.515 54.61 0)
+			(at 182.88 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1670,7 +1676,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 183.515 54.61 0)
+			(at 182.88 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1679,7 +1685,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 183.515 54.61 0)
+			(at 182.88 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1688,7 +1694,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 183.515 54.61 0)
+			(at 182.88 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1697,7 +1703,7 @@
 			)
 		)
 		(property "Digikey_PN" "541-3993-1-ND"
-			(at 183.515 54.61 0)
+			(at 182.88 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1722,7 +1728,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 112.395 59.69 0)
+		(at 111.76 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1730,7 +1736,7 @@
 		(dnp no)
 		(uuid "55658e86-63d9-4028-9c39-97dd8ca26cf7")
 		(property "Reference" "C3"
-			(at 109.093 57.912 0)
+			(at 108.458 57.912 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1739,7 +1745,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 109.093 61.468 0)
+			(at 108.458 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1748,7 +1754,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 112.395 59.69 0)
+			(at 111.76 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1757,7 +1763,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 112.395 59.69 0)
+			(at 111.76 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1766,7 +1772,7 @@
 			)
 		)
 		(property "Description" "CAP CER 1UF 16V X7R 0603"
-			(at 112.395 59.69 0)
+			(at 111.76 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,7 +1781,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.co.nz/en/products/detail/samsung-electro-mechanics/CL10B105KO8NNNC/3886677"
-			(at 112.395 59.69 0)
+			(at 111.76 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1790,7 @@
 			)
 		)
 		(property "Digikey_PN" "1276-1019-1-ND"
-			(at 112.395 59.69 0)
+			(at 111.76 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1809,7 +1815,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 136.525 50.8 0)
+		(at 135.89 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1817,7 +1823,7 @@
 		(dnp no)
 		(uuid "a5772ebd-3094-4fb7-9361-b622c889bff4")
 		(property "Reference" "#PWR011"
-			(at 136.525 54.61 0)
+			(at 135.89 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1826,7 +1832,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 136.525 46.736 0)
+			(at 135.89 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1834,7 +1840,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 136.525 50.8 0)
+			(at 135.89 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1843,7 +1849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 136.525 50.8 0)
+			(at 135.89 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1852,7 +1858,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 136.525 50.8 0)
+			(at 135.89 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1874,7 +1880,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 142.875 54.61 270)
+		(at 142.24 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1882,7 +1888,7 @@
 		(dnp no)
 		(uuid "b9c85028-08cd-401d-979d-a5a5e56f258f")
 		(property "Reference" "TP3"
-			(at 147.701 53.594 90)
+			(at 147.066 53.594 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1891,7 +1897,7 @@
 			)
 		)
 		(property "Value" "3.3v"
-			(at 147.701 55.626 90)
+			(at 147.066 55.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1900,7 +1906,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 142.875 59.69 0)
+			(at 142.24 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1909,7 +1915,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.875 59.69 0)
+			(at 142.24 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1918,7 +1924,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.875 54.61 0)
+			(at 142.24 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,7 +1933,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 142.875 54.61 0)
+			(at 142.24 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,7 +1942,7 @@
 			)
 		)
 		(property "Digikey_PN" ""
-			(at 142.875 54.61 0)
+			(at 142.24 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,7 +1964,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 183.515 50.8 0)
+		(at 182.88 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1966,7 +1972,7 @@
 		(dnp no)
 		(uuid "d4d91db8-4056-4362-9c6d-f9a0a457c59b")
 		(property "Reference" "#PWR035"
-			(at 183.515 54.61 0)
+			(at 182.88 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1975,7 +1981,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 183.515 46.736 0)
+			(at 182.88 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1983,7 +1989,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 183.515 50.8 0)
+			(at 182.88 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1992,7 +1998,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 183.515 50.8 0)
+			(at 182.88 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2001,7 +2007,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 183.515 50.8 0)
+			(at 182.88 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2023,7 +2029,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:TLV76133DCY")
-		(at 125.095 54.61 0)
+		(at 124.46 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2032,7 +2038,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9cd632d-73ad-42a9-88e5-3e13492bd1d9")
 		(property "Reference" "U2"
-			(at 125.095 48.26 0)
+			(at 124.46 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +2046,7 @@
 			)
 		)
 		(property "Value" "TLV76133DCY"
-			(at 125.095 50.8 0)
+			(at 124.46 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2048,7 +2054,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 125.095 66.04 0)
+			(at 124.46 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2057,7 +2063,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv761.pdf"
-			(at 125.095 68.58 0)
+			(at 124.46 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2066,7 +2072,7 @@
 			)
 		)
 		(property "Description" "3.3V, 1A, Low Noise, High-PSRR LDO Regulator, 2.5V...16V input, SOT-223"
-			(at 125.095 54.61 0)
+			(at 124.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2075,7 +2081,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.co.nz/en/products/detail/texas-instruments/TLV76133DCYR/18716472?s=N4IgTCBcDaICoBkBqB2AbARgMxYCIGEBNEAXQF8g"
-			(at 125.095 54.61 0)
+			(at 124.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2084,7 +2090,7 @@
 			)
 		)
 		(property "Digikey_PN" "296-TLV76133DCYRCT-ND"
-			(at 125.095 54.61 0)
+			(at 124.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

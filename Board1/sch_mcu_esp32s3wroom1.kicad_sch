@@ -2662,7 +2662,7 @@
 		)
 		(uuid "ffac04fb-39e1-45c7-b19b-4143684be8e5")
 	)
-	(text_box "DESIGN NOTE:\n\nThis could be removed in favour of a USB connectorhowever cost uplift and slightly more complex to route. The firmware is unlikely to be updated often AND could be done OTA."
+	(text_box "DESIGN NOTE:\n\nThis could be removed in favour of a USB connector however cost uplift and slightly more complex to route. The firmware is unlikely to be updated often and after initial flash, could be done OTA."
 		(exclude_from_sim no)
 		(at 187.96 83.185 0)
 		(size 59.055 14.605)
@@ -3673,7 +3673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
+		(property "Datasheet" "https://www.ckswitches.com/media/1476/pts810.pdf"
 			(at 161.29 50.8 0)
 			(effects
 				(font
@@ -4539,7 +4539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
+		(property "Datasheet" "https://www.ckswitches.com/media/1476/pts810.pdf"
 			(at 207.01 48.26 0)
 			(effects
 				(font

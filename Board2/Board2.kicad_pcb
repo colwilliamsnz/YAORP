@@ -1866,6 +1866,19 @@
 				)
 			)
 		)
+		(property "Digikey_PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a142271-0606-452f-bde9-30a7a5f758e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/7f96b575-3e97-4f78-9864-6c0524ae0607")
 		(sheetname "Root")
@@ -2328,7 +2341,7 @@
 			)
 		)
 	)
-	(footprint "Colins Library:MLX90614xCC_MEL"
+	(footprint "0_Project:IRTHERMO_MLX90614xCC_MEL"
 		(layer "F.Cu")
 		(uuid "e23cbe85-94c0-48e3-bdf5-0945602dc726")
 		(at 140 65.407897)
@@ -2337,8 +2350,7 @@
 			(at 1.796051 1.796051 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d9dcf6cd-a5a5-4996-8ba7-ba758ddd470a")
+			(uuid "7171981d-fc83-4fa6-9cff-eb5d7bb367a9")
 			(effects
 				(font
 					(size 1 1)
@@ -2350,7 +2362,7 @@
 			(at 1.796051 1.796051 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "624a9331-4bf1-4f9b-8249-cdc75a370c6e")
+			(uuid "9c58d890-bf12-4fc5-901b-7c0bdd992602")
 			(effects
 				(font
 					(size 1 1)
@@ -2358,11 +2370,11 @@
 				)
 			)
 		)
-		(property "Footprint" "Colins Library:MLX90614xCC_MEL"
+		(property "Footprint" "0_Project:IRTHERMO_MLX90614xCC_MEL"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d5858415-3015-4df9-9995-9b4fccaeb715")
+			(uuid "59f11355-dc8b-4004-af6b-fc3ea12c41b6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2374,7 +2386,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d33c86db-bce0-4d21-9a3d-c7bbb2bae8ec")
+			(uuid "475db1d6-c5cc-404c-b3fa-82b7851e4981")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2386,7 +2398,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "99858ecc-4b63-4662-836b-fca0beadcd65")
+			(uuid "a77f4cd2-828e-4694-8d9b-f96c8c9cee7a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,7 +2411,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d49a390e-a188-43cf-bc26-39473886045e")
+			(uuid "418414c1-5e49-4a66-9b94-9a1cb5a3e4ed")
 			(effects
 				(font
 					(size 1 1)
@@ -2412,7 +2424,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "92474aae-767d-4ba6-99f4-541b20aacffc")
+			(uuid "c9ff1144-f882-4f18-bb25-a041debd2e11")
 			(effects
 				(font
 					(size 1 1)
@@ -2433,7 +2445,7 @@
 				(type solid)
 			)
 			(layer "F.Cu")
-			(uuid "1cadbb52-8196-46a4-8d38-16805be137d1")
+			(uuid "03447ed5-3df8-45c5-ba20-c9ad5b941c79")
 		)
 		(fp_circle
 			(center 1.796051 1.796051)
@@ -2444,18 +2456,18 @@
 			)
 			(fill none)
 			(layer "F.SilkS")
-			(uuid "f3ef8a4d-458b-42c0-8772-442e4fe34cd0")
+			(uuid "606292fb-6029-4983-b763-fd1f5f16d17e")
 		)
 		(fp_arc
 			(start 6.340061 -2.747958)
-			(mid 8.222251 1.796052)
+			(mid 8.222251 1.796051)
 			(end 6.340061 6.340061)
 			(stroke
 				(width 0.0254)
 				(type solid)
 			)
 			(layer "Dwgs.User")
-			(uuid "7468382f-ada3-464b-9c57-84a0c75f18e0")
+			(uuid "3984b394-0876-45d9-9062-187e105a277a")
 		)
 		(fp_circle
 			(center 1.796051 1.796051)
@@ -2466,7 +2478,7 @@
 			)
 			(fill none)
 			(layer "Dwgs.User")
-			(uuid "b77112c2-6f53-44c9-913b-13998217eaf2")
+			(uuid "2dfe942b-3f6c-45b8-8a5f-0b643106a1ea")
 		)
 		(fp_line
 			(start -3.614149 -0.431679)
@@ -2476,7 +2488,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "443cb316-118c-4d0c-a88a-fe0a8f91d154")
+			(uuid "bfbc6847-3a28-490a-a934-07a8af376597")
 		)
 		(fp_line
 			(start -3.614149 4.023781)
@@ -2486,7 +2498,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "707ef07e-7642-4a3d-aad7-d9860018a657")
+			(uuid "e1dd238d-1027-4787-8b9c-2df73900fd1b")
 		)
 		(fp_line
 			(start -0.431679 -3.614149)
@@ -2496,7 +2508,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "32df56db-2fc0-4a07-8ba8-62b605db7287")
+			(uuid "5c69951d-26cd-4054-bef0-5ae46376a6ff")
 		)
 		(fp_line
 			(start -0.431679 7.206251)
@@ -2506,7 +2518,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "dd7c8b61-c148-487b-9869-cf6d43046710")
+			(uuid "2689d4c4-b213-49be-8507-5b3fb5601207")
 		)
 		(fp_line
 			(start 4.023781 -3.614149)
@@ -2516,7 +2528,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "1a64f63c-979e-4a99-9e1a-ba61630c5e0a")
+			(uuid "dc854122-cdf3-4a6d-aeb9-bc5f8100a4cf")
 		)
 		(fp_line
 			(start 4.023781 7.206251)
@@ -2526,7 +2538,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "afb8716d-9518-4073-8c71-30b4d1420d57")
+			(uuid "82e68f29-68e5-48d3-944f-34f27a374488")
 		)
 		(fp_line
 			(start 7.206251 -0.431679)
@@ -2536,7 +2548,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "f88b194c-d399-4a7b-a55b-e4666d29f7f7")
+			(uuid "89bf3588-2e67-4caa-bb0c-5c74edf8706d")
 		)
 		(fp_line
 			(start 7.206251 4.023781)
@@ -2546,7 +2558,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a939c1d5-4e12-4f66-b0ed-06949db1f08b")
+			(uuid "6e7aad8b-835f-4baf-9dcf-cdd476efd1c0")
 		)
 		(fp_line
 			(start -3.172772 -2.279098)
@@ -2556,7 +2568,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f06fa379-5c81-43f6-8b08-aa14a7cd38f9")
+			(uuid "e055d345-c535-47f4-9089-b8a1ac145b97")
 		)
 		(fp_line
 			(start -2.279098 -3.172772)
@@ -2566,7 +2578,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "56eee96a-b57c-42d3-bc49-2d422a892636")
+			(uuid "af3ca197-09ae-4e9b-94f8-0866042fb404")
 		)
 		(fp_line
 			(start -1.849933 -1.849933)
@@ -2576,7 +2588,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "69db3937-72c3-4823-ab12-fa58e4491f04")
+			(uuid "a993f0e4-1a96-46e8-84b6-e86d7bc75389")
 		)
 		(fp_circle
 			(center 1.796051 1.796051)
@@ -2587,13 +2599,13 @@
 			)
 			(fill none)
 			(layer "F.Fab")
-			(uuid "f10aee47-597b-4f1c-80ad-552be589577e")
+			(uuid "f7c0fffa-08f1-46b7-a7ac-c993e3a99735")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 1.796051 1.796051 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "3a1a90c1-adaa-4b8f-b9bf-a31cca511b1c")
+			(uuid "d7bad0e9-3c1e-45e4-8f4c-2a438a637fed")
 			(effects
 				(font
 					(size 1 1)
@@ -2610,7 +2622,7 @@
 			(net 6 "/Therm_SCL")
 			(pinfunction "SCL/VZ")
 			(pintype "input")
-			(uuid "1d3bd2cb-15e6-4b0a-a930-c72280b8c950")
+			(uuid "11a5b782-6aa3-486e-b2e6-14422fded70a")
 		)
 		(pad "2" thru_hole circle
 			(at 0 3.592103 90)
@@ -2621,7 +2633,7 @@
 			(net 7 "/Therm_SDA")
 			(pinfunction "SDA/PWM")
 			(pintype "bidirectional")
-			(uuid "e36e17cc-723d-41fd-9bcb-a27d4c18497e")
+			(uuid "2775a7f9-8893-4d3c-bcaf-ca8390ad3eba")
 		)
 		(pad "3" thru_hole circle
 			(at 3.592103 3.592103)
@@ -2632,7 +2644,7 @@
 			(net 2 "/Therm_3.3v")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "f7d4a4ed-016a-42fb-87a1-d752f6692d00")
+			(uuid "f56f4f2f-0590-48c3-b545-48ff94aade60")
 		)
 		(pad "4" thru_hole circle
 			(at 3.592103 0 90)
@@ -2643,11 +2655,11 @@
 			(net 3 "/Therm_GND")
 			(pinfunction "VSS")
 			(pintype "power_out")
-			(uuid "e81835d5-9ee0-4788-a23a-8f3a93df2012")
+			(uuid "2d4e6cac-602c-4157-800e-b477f4fe852b")
 		)
 		(model "${KIPRJMOD}/Library/3DModels/IRLED_MLX90614ESF-BCC-000-TU.step"
 			(offset
-				(xyz 1.7 -1.8 0)
+				(xyz 1.9 -1.8 0)
 			)
 			(scale
 				(xyz 1 1 1)

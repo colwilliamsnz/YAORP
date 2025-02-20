@@ -59,10 +59,11 @@
         }
       ],
       "drc_exclusions": [
+        "net_conflict|37200000|55200000|8a919846-8faa-43e4-b81c-55910cab0879|00000000-0000-0000-0000-000000000000",
         "silk_edge_clearance|125000000|54150000|cebf6834-dcd2-4dd4-8bc3-4e7ee4c37860|583c6f8e-979f-4169-a741-dd6fd0455f8d",
         "silk_edge_clearance|125000000|72550000|cebf6834-dcd2-4dd4-8bc3-4e7ee4c37860|56c3065d-311d-4201-905b-076641ff6504",
-        "silk_edge_clearance|54308824|57650000|e9e05db8-42ab-4bac-ab5a-27ef21cad92d|c57c1e50-21f8-4385-81fa-24182daf8293",
-        "silk_edge_clearance|62909314|48877500|e9e05db8-42ab-4bac-ab5a-27ef21cad92d|641a7bd7-5847-4da6-afdb-9e5bf46219c0"
+        "silk_edge_clearance|54308824|57650000|e9e05db8-42ab-4bac-ab5a-27ef21cad92d|b23ccbb5-05c5-407a-834c-ec1388b3dc6f",
+        "silk_edge_clearance|62909314|48877500|e9e05db8-42ab-4bac-ab5a-27ef21cad92d|e41d5683-9c7c-49c3-961f-bea8d66bb573"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -516,7 +517,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "Templates/Wattle_Lab_Drawing_Sheet_A4.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,

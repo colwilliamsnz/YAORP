@@ -743,8 +743,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "BZ1"
-				(at 3.81 1.2701 0)
+			(property "Reference" "BZ"
+				(at 3.81 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -753,7 +753,7 @@
 				)
 			)
 			(property "Value" "Buzzer"
-				(at 3.81 -1.2699 0)
+				(at 3.81 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -761,7 +761,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Buzzer_Beeper:XDCR_AT-1224-TWT-5V-2-R"
+			(property "Footprint" ""
 				(at -0.635 2.54 90)
 				(effects
 					(font
@@ -780,15 +780,6 @@
 				)
 			)
 			(property "Description" "Buzzer, polarized"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier" "https://www.digikey.co.nz/en/products/detail/pui-audio-inc/AT-1224-TWT-5V-2-R/5011404"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2888,7 +2879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "BUZZER MAGNETIC 5V 12MM TH"
+		(property "Description" "Buzzer, polarized"
 			(at 102.87 107.95 0)
 			(effects
 				(font

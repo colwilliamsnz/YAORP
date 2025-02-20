@@ -80,15 +80,15 @@
   "project": {
     "files": [
       {
-        "name": "Board1.kicad_pro",
-        "open": false,
+        "name": "Board1.kicad_sch",
+        "open": true,
         "window": {
           "display": 1,
-          "maximized": false,
-          "pos_x": -2436,
-          "pos_y": 82,
-          "size_x": 1029,
-          "size_y": 774
+          "maximized": true,
+          "pos_x": -2465,
+          "pos_y": 40,
+          "size_x": 2106,
+          "size_y": 1285
         }
       },
       {
