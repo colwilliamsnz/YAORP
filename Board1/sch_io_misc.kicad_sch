@@ -1,19 +1,21 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "13261450-c418-4f6d-a4d3-f90ce3eb965d")
 	(paper "A4")
 	(title_block
 		(title "Misc I/O")
-		(date "2025-02-19")
-		(rev "1.1")
+		(date "2025-03-08")
+		(rev "1.2")
 		(company "Wattle Labs")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -87,9 +89,42 @@
 				)
 			)
 			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -113,7 +148,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -121,39 +156,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(pin passive line
@@ -211,10 +213,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -288,21 +293,53 @@
 				)
 			)
 			(symbol "Conn_01x04_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -326,7 +363,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -336,48 +373,16 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -453,10 +458,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -530,33 +538,64 @@
 				)
 			)
 			(symbol "Conn_01x05_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy 1.27 5.08) (xy 0.8636 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -580,7 +619,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -590,59 +629,28 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -736,10 +744,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Buzzer"
 			(pin_names
-				(offset 0.0254) hide)
+				(offset 0.0254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -807,18 +818,6 @@
 				)
 			)
 			(symbol "Buzzer_0_1"
-				(arc
-					(start 0 -3.175)
-					(mid 3.1612 0)
-					(end 0 3.175)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.651 1.905) (xy -1.143 1.905)
@@ -835,6 +834,18 @@
 					(pts
 						(xy -1.397 2.159) (xy -1.397 1.651)
 					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 3.175)
+					(mid 3.1612 0)
+					(end 0 -3.175)
 					(stroke
 						(width 0)
 						(type default)
@@ -894,11 +905,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -968,10 +984,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -980,10 +996,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -1029,11 +1045,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1103,7 +1124,7 @@
 			(symbol "R_Small_US_1_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -1115,7 +1136,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -1162,12 +1183,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1239,7 +1265,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1251,7 +1277,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1282,12 +1308,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1378,7 +1409,156 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 99.06 125.73)
+		(end 99.06 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8b38c5dc-182f-4064-8ea0-fbea0c375c11)
+	)
+	(text "OLED Connector"
+		(exclude_from_sim no)
+		(at 40.64 96.774 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2fc39976-bdaf-4a2c-8d94-1bf0d1ef541c")
+	)
+	(text "Rotary Encoder Connector"
+		(exclude_from_sim no)
+		(at 45.72 37.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9a36cbad-c40f-44ca-bf1a-2e2e7750ecf3")
+	)
+	(text "Cooling Plate LED Connector"
+		(exclude_from_sim no)
+		(at 104.14 37.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "beeaf44a-d327-4ce8-ac63-dc018b2e4286")
+	)
+	(text "Cooling Plate IR Thermometer Connector"
+		(exclude_from_sim no)
+		(at 172.466 37.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ca6a1bbe-0f26-42dc-b9cd-c8590603174b")
+	)
+	(text "Buzzer"
+		(exclude_from_sim no)
+		(at 93.472 97.028 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fdb69691-555f-475b-ba86-cb955eb35704")
+	)
+	(text_box "DESIGN NOTE:\n\nLEDs live on a seperate schematic/PCB (board 2)"
+		(exclude_from_sim no)
+		(at 88.9 71.12 0)
+		(size 53.34 10.16)
+		(margins 1.2025 1.2025 1.2025 1.2025)
+		(stroke
+			(width 0.5)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "17ef57dd-13dd-4ae4-8b48-8de46f422d6a")
+	)
+	(text_box "DESIGN NOTE:\n\nSSD1306 128X64 pixel 1.5\" OLED"
+		(exclude_from_sim no)
+		(at 33.02 127 0)
+		(size 38.1 10.16)
+		(margins 1.2025 1.2025 1.2025 1.2025)
+		(stroke
+			(width 0.5)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "6a6e0b3e-f593-4a8c-b9f0-5b70843e2ef1")
+	)
+	(text_box "DESIGN NOTE:\n\nEncoder module includes pullups"
+		(exclude_from_sim no)
+		(at 33.02 71.12 0)
+		(size 38.1 10.16)
+		(margins 1.2025 1.2025 1.2025 1.2025)
+		(stroke
+			(width 0.5)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "aad70deb-b308-484a-839f-167affae43e9")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 12.065 12.065 0)
+		(size 273.05 13.335)
+		(margins 2.2499 2.2499 2.2499 2.2499)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.375)
+			)
+		)
+		(uuid "e98908cf-8479-4ee4-bf6a-74718e8115ae")
 	)
 	(junction
 		(at 167.64 60.96)
@@ -1476,16 +1656,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 60.96) (xy 52.07 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ae0427a-6bb1-4d5c-b08e-708b08c619c3")
-	)
-	(wire
-		(pts
 			(xy 43.18 53.34) (xy 50.8 53.34)
 		)
 		(stroke
@@ -1493,6 +1663,16 @@
 			(type default)
 		)
 		(uuid "31a3c3c4-01b9-4af7-83dc-9d2e1e64b3ac")
+	)
+	(wire
+		(pts
+			(xy 43.18 60.96) (xy 52.07 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35593d4c-d662-4f79-a69d-ff32e69f6271")
 	)
 	(wire
 		(pts
@@ -1516,6 +1696,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 55.88) (xy 52.07 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fd3bbb3-984b-4686-a771-8aabe9df17a0")
+	)
+	(wire
+		(pts
 			(xy 167.64 60.96) (xy 167.64 62.23)
 		)
 		(stroke
@@ -1523,6 +1713,16 @@
 			(type default)
 		)
 		(uuid "419f70a0-6e85-4966-924b-4c81569337a8")
+	)
+	(wire
+		(pts
+			(xy 43.18 58.42) (xy 52.07 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42c4bc54-1f07-4ad7-b7d7-d2310a1d62d6")
 	)
 	(wire
 		(pts
@@ -1563,16 +1763,6 @@
 			(type default)
 		)
 		(uuid "5b9e1796-b8e1-4093-ba59-4c4394fd1994")
-	)
-	(wire
-		(pts
-			(xy 43.18 55.88) (xy 52.07 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cf12983-da6e-43ae-bdb7-c4939291c8ed")
 	)
 	(wire
 		(pts
@@ -1706,16 +1896,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 58.42) (xy 52.07 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d152472a-f7ab-48a8-af0b-f9628bdc1804")
-	)
-	(wire
-		(pts
 			(xy 116.84 49.53) (xy 119.38 49.53)
 		)
 		(stroke
@@ -1764,153 +1944,9 @@
 		)
 		(uuid "fc9aa96d-f7fa-4ea2-9a7f-a2a8b6ce5d7b")
 	)
-	(rectangle
-		(start 99.06 125.73)
-		(end 99.06 125.73)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 8b38c5dc-182f-4064-8ea0-fbea0c375c11)
-	)
-	(text_box "DESIGN NOTE:\n\nLEDs live on a seperate schematic/PCB (board 2)"
-		(exclude_from_sim no)
-		(at 88.9 71.12 0)
-		(size 53.34 10.16)
-		(stroke
-			(width 0.5)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "17ef57dd-13dd-4ae4-8b48-8de46f422d6a")
-	)
-	(text_box "DESIGN NOTE:\n\nSSD1306 128X64 pixel 1.5\" OLED"
-		(exclude_from_sim no)
-		(at 33.02 127 0)
-		(size 38.1 10.16)
-		(stroke
-			(width 0.5)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "6a6e0b3e-f593-4a8c-b9f0-5b70843e2ef1")
-	)
-	(text_box "DESIGN NOTE:\n\nEncoder module includes pullups"
-		(exclude_from_sim no)
-		(at 33.02 71.12 0)
-		(size 38.1 10.16)
-		(stroke
-			(width 0.5)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "aad70deb-b308-484a-839f-167affae43e9")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 12.065 12.065 0)
-		(size 273.05 13.335)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 0.375)
-			)
-		)
-		(uuid "e98908cf-8479-4ee4-bf6a-74718e8115ae")
-	)
-	(text "OLED Connector"
-		(exclude_from_sim no)
-		(at 40.64 96.774 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2fc39976-bdaf-4a2c-8d94-1bf0d1ef541c")
-	)
-	(text "Rotary Encoder Connector"
-		(exclude_from_sim no)
-		(at 45.72 37.846 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9a36cbad-c40f-44ca-bf1a-2e2e7750ecf3")
-	)
-	(text "Cooling Plate LED Connector"
-		(exclude_from_sim no)
-		(at 104.14 37.846 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "beeaf44a-d327-4ce8-ac63-dc018b2e4286")
-	)
-	(text "Cooling Plate IR Thermometer Connector"
-		(exclude_from_sim no)
-		(at 172.466 37.846 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ca6a1bbe-0f26-42dc-b9cd-c8590603174b")
-	)
-	(text "Buzzer"
-		(exclude_from_sim no)
-		(at 93.472 97.028 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fdb69691-555f-475b-ba86-cb955eb35704")
-	)
 	(global_label "ROTARY_SIG"
 		(shape input)
-		(at 52.07 55.88 0)
+		(at 52.07 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1920,7 +1956,7 @@
 		)
 		(uuid "07486373-1670-4ff8-8edb-f26578e67f69")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.4682 55.88 0)
+			(at 65.4682 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +2100,7 @@
 	)
 	(global_label "ROTARY_BTN"
 		(shape input)
-		(at 52.07 60.96 0)
+		(at 52.07 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2074,7 +2110,7 @@
 		)
 		(uuid "9dd6d938-dfea-4e27-8255-9b096cfca651")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.952 60.96 0)
+			(at 65.952 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2449,7 +2485,7 @@
 				)
 			)
 		)
-		(property "Value" "Rotary Encoder"
+		(property "Value" "Rot.Encoder"
 			(at 40.64 47.752 0)
 			(effects
 				(font
@@ -2696,7 +2732,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Cool. Plate"
+		(property "Value" "Cool.Plate"
 			(at 125.73 53.3399 0)
 			(effects
 				(font
@@ -3034,7 +3070,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "IR Therm"
+		(property "Value" "IRTherm"
 			(at 176.53 55.8799 0)
 			(effects
 				(font

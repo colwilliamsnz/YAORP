@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "271970c7-42f1-4139-b851-75428d3784a0")
 	(paper "A4")
 	(title_block
@@ -84,18 +84,6 @@
 			(symbol "MLX90614ESF-BCC-000-TU_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -7.62) (xy 38.1 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 5.08) (xy 7.62 -7.62)
 					)
 					(stroke
@@ -108,7 +96,7 @@
 				)
 				(polyline
 					(pts
-						(xy 38.1 -7.62) (xy 38.1 5.08)
+						(xy 7.62 -7.62) (xy 38.1 -7.62)
 					)
 					(stroke
 						(width 0.127)
@@ -121,6 +109,18 @@
 				(polyline
 					(pts
 						(xy 38.1 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 38.1 -7.62) (xy 38.1 5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -166,24 +166,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 45.72 -2.54 180)
-					(length 7.62)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_out line
 					(at 45.72 0 180)
 					(length 7.62)
@@ -202,11 +184,32 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 45.72 -2.54 180)
+					(length 7.62)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -280,9 +283,42 @@
 				)
 			)
 			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -306,7 +342,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -314,39 +350,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(pin passive line
@@ -404,10 +407,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -481,21 +487,53 @@
 				)
 			)
 			(symbol "Conn_01x04_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -519,7 +557,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -529,48 +567,16 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -646,11 +652,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -720,10 +731,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -732,10 +743,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -781,11 +792,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -853,10 +869,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -877,7 +905,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -889,22 +917,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -950,6 +966,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -1032,11 +1049,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -1134,12 +1156,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:Earth"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1266,7 +1293,151 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Fan mounts"
+		(exclude_from_sim no)
+		(at 266.446 81.534 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "3efea7c4-3836-4339-bf3e-a44e05c9e6b6")
+	)
+	(text "LEDs"
+		(exclude_from_sim no)
+		(at 116.078 31.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "507fe8d1-1ade-4480-869d-4412e895eb9d")
+	)
+	(text "PROJECT NOTES"
+		(exclude_from_sim no)
+		(at 159.385 128.905 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+				(color 53 60 207 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "61efacb2-f53d-4dc5-a318-fe49775db03e")
+	)
+	(text "Board mounts"
+		(exclude_from_sim no)
+		(at 183.896 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "d8cca02a-fc0d-41ea-9178-22d361813961")
+	)
+	(text "Infrared Thermometer LED"
+		(exclude_from_sim no)
+		(at 38.1 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "fc657c44-fb1c-471b-8ba5-de8c062fb4ed")
+	)
+	(text_box "This board is intended to be populated with components on the bottom board only and 2 additional boards sandwiched together using 11mm copper spacers and then the PTC plate mounted to the top.\n\nThe bottom board should be 180deg in relation to 2nd/3rd board to allow the IRLED thermometer to shine up through the hole on the opposite side of the board and onto the bottom of the PTC plate. The hole has been sized to suit the 30deg IRLED lens.\n\nThe board should be earthed via one of the mounting holes to ground the PTC plate for safety purposes.\n\nA 60x10mm fan is to be mounted on the bottom forcing air onto the hot plate. In practise the fan may not be needed.\n"
+		(exclude_from_sim no)
+		(at 158.75 129.54 0)
+		(size 124.46 48.26)
+		(margins 1.1249 1.1249 1.1249 1.1249)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 72 72 72 1)
+			)
+			(justify left top)
+		)
+		(uuid "1250234d-a1de-48e4-916d-d6ad812f25cc")
+	)
+	(text_box "DESIGN NOTES:\n\nThe main mounting holes are all earthed. 3 identical plates are intended to be connected to one another using 11mm copper standoffs that are offset and then connected to the mains earth connection. This is to earth the PTC heating element."
+		(exclude_from_sim no)
+		(at 231.14 31.75 0)
+		(size 50.038 20.066)
+		(margins 1.2025 1.2025 1.2025 1.2025)
+		(stroke
+			(width 0.5)
+			(type solid)
+			(color 250 236 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "42cedc42-30ef-4025-9ac6-38424e119aee")
+	)
+	(text_box "DESIGN NOTE:\n\n1. Current limiting resistors are located on the mainboard.\n2. Warning LED is intended to be red.\n3. Safe LED is intended to be green."
+		(exclude_from_sim no)
+		(at 114.808 56.642 0)
+		(size 44.45 15.24)
+		(margins 1.2025 1.2025 1.2025 1.2025)
+		(stroke
+			(width 0.5)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "acfd21b7-e99b-4916-94e9-ee0473833f8e")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 11.938 11.938 0)
+		(size 273.05 13.335)
+		(margins 2.2499 2.2499 2.2499 2.2499)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.375)
+			)
+		)
+		(uuid "ed53f1c9-62cf-4de2-ad7c-7df6271416bf")
 	)
 	(junction
 		(at 182.118 64.262)
@@ -15222,147 +15393,44 @@
 			"208wd+Lr1b7pTllsm96z7A6YVdNXdcbnaqwPV/A+LSceuZ1HvclU3JdUct3lK9SQilFP5Xx2eZ+9"
 			"fIGPcw65zvkK8/XZ7DXnL6bP9PqARipmH1z7nm5O70+6lGlVR5Kf5EC4XQyxS3dwfmGXf9DkrJL8"
 			"Kx4/2RhWRcDc4fFbZAD1qdst1zkn3PvQzWbjwRasn/1zbg4J/b7v/gN/5ziO11/+y375//jYV+Xc"
-			"Kf8fETPUL2VTUKsAAAAASUVORK5CYII="
+			"Kf8fETPUL2VTUKsAAAAASUVORK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEPVb"
+			"YIJ/AAA49Flggn8AAAAAAAABAAAAAAAAAAAAAADAi2cAAGAAAAIAAAABAAAAsL9kYIJ/AADAi2cA"
+			"AGAAAAAAAAAAAAAAyL9kYIJ/AAAAAAAAAAAAAMCLZwAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAYAAAAGAAAABgAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAABgAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAGAAAABgAAAAYAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAyPZbYIJ/AAAAAQIDAAAAAADsMYCCfwAAwItnAABgAABxAAAAAgAAAAIAAAACAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAYAAAAGAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcQAAAHEAAABxAAAAcQAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAABgAAAAYAAAAGAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwePWLxGH9ohlOGtVVLP53jdbwKk1N1IU0401d/zPfpsum3"
+			"rqFm9z3rTtO0/R9PsNJ0mwt7LSrKFLa1srSJYoraJFCpHGigBVVQAFAAAAArCUnNuUndsYajqOn6"
+			"Rp99q2rX1vZaXZQvcXN5dyrFFbxIpZ5JHYgKqqCSxIAAJNEYuTUYq7YHgsvxP8f/ABGcwfAbw5pj"
+			"+HFlWOT4g+MRcxabKpaMmTTLSMLLqcZjLFZhLb2z7kMU8w3hOiNOnDWs+j0W99bXvotbX3dmK76H"
+			"MeKfB/hLw9pcOsftTftAtqFje3TxRWGp6rF4R0BmkZmNolnDKhvImjCoYL6e83KjdncNUar2oQtt"
+			"5u6Xe2l3rb/ITXcu+H/iPDp2i2XhP9nf9nXX5vD9rsW1a60lPBGh2DSzMz7ku0iudgBeUva2U6ks"
+			"OSzHAqSlK9epbf8AvPRabd3pv+QX7I6lvC/x68WlJfEnxL0rwNpzEv8A2V4A06PUb2BhlQjapqMb"
+			"wzRMPnIXToXDbVDkKTJlzU4rSN35/wCS/wAx69SPSv2Zvg3avZXviXwxJ44122iijj1r4jXs/ie6"
+			"iZM/PC168q2xZmZmW3WJCSPlwFAueLqSk5Q91XbtHRK/b9NRcqPcbGxstMtLfT9Ns4LSwgUJFbW0"
+			"axxxKOgVQAAPYVhKTm+aTuyi1UgeP63/AMl++GfX/kT/ABN/6W6DXLP/AHqH+GX5wPfw3/IhxX/X"
+			"6h/6RiT2Cuo8A5Lxf4A8CfEKxg0zx94K0HxLpsLmSO01/TYL+KNyMFlSVWAOOMgVcKk6d1CTV+wr"
+			"Jnl6/sxfBaymuZvDHhrUfCCXIQTW3w/8Q6p4Wt5igIUvBp1xBGzAE8lSeTWjxNSUFCTulfdJ7767"
+			"hyrcYvwp+IfhK3+1eAfjb4s1D7BI01l4V8bS2N/p90m8sbWe+Nm2ohSpKJcNcTSRnY7LcBDFISqx"
+			"m7yilpbTTpa+9r9+4WsegaBr3hj4reFdasNQ0UtA5m0bxB4V1+CN5rGYxjzrK8hyyNmOVGBBeKWK"
+			"WOWNpIpY5GyacHox7nyR+zz4B8L6n4Y1fwv4P+JWr+C/iv4G1O78P+I7TwTNDZW7/Z7ia3hu38P3"
+			"SXGn2gv4reK88yG2RmZ32S4MgPbiZyTTlG8Wla+r77qz3vv0fzJij3mfxX8aPh2FuvH3hrTvHPhY"
+			"uvn638PNPuLS/wBOVjgtJo0s1w9xEgVmaS2uJJ2LqqWjYLnmUadT4XZ+f+eg9T1zwp4u8L+O/D+m"
+			"+K/BniCw1vw1qCs1tqemTrPDMFYowDqSMqysrDqrKQQCCKznCUG4yVmO9zoqkD561f4Laj4T1XxF"
+			"42+AOs23hbxTrN9Lq+seHL9Gn0HxRQ=="
 		)
-	)
-	(text_box "This board is intended to be populated with components on the bottom board only and 2 additional boards sandwiched together using 11mm copper spacers and then the PTC plate mounted to the top.\n\nThe bottom board should be 180deg in relation to 2nd/3rd board to allow the IRLED thermometer to shine up through the hole on the opposite side of the board and onto the bottom of the PTC plate. The hole has been sized to suit the 30deg IRLED lense.\n\nThe board should be earthed via one of the mounting holes to ground the PTC plate for safety purposes.\n\nA 60x10mm fan is to be mounted on the bottom forcing air onto the hot plate. In practise the fan may not be needed and pending build of the prototype may be ommitted from a future design.\n"
-		(exclude_from_sim no)
-		(at 158.75 129.54 0)
-		(size 124.46 48.26)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.5 1.5)
-				(color 72 72 72 1)
-			)
-			(justify left top)
-		)
-		(uuid "1250234d-a1de-48e4-916d-d6ad812f25cc")
-	)
-	(text_box "DESIGN NOTES:\n\nThe main mounting holes are all earthed. 3 identical plates are intended to be connected to one another using 11mm copper standoffs that are offset and then connected to the mains earth connection. This is to earth the PTC heating element."
-		(exclude_from_sim no)
-		(at 231.14 31.75 0)
-		(size 50.038 20.066)
-		(stroke
-			(width 0.5)
-			(type solid)
-			(color 250 236 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "42cedc42-30ef-4025-9ac6-38424e119aee")
-	)
-	(text_box "DESIGN NOTE:\n\n1. Current limiting resistors are located on the mainboard.\n2. Warning LED is intended to be red.\n3. Safe LED is intended to be green."
-		(exclude_from_sim no)
-		(at 114.808 56.642 0)
-		(size 44.45 15.24)
-		(stroke
-			(width 0.5)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "acfd21b7-e99b-4916-94e9-ee0473833f8e")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 11.938 11.938 0)
-		(size 273.05 13.335)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 0.375)
-			)
-		)
-		(uuid "ed53f1c9-62cf-4de2-ad7c-7df6271416bf")
-	)
-	(text "Fan mounts"
-		(exclude_from_sim no)
-		(at 266.446 81.534 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-		)
-		(uuid "3efea7c4-3836-4339-bf3e-a44e05c9e6b6")
-	)
-	(text "LEDs"
-		(exclude_from_sim no)
-		(at 116.078 31.242 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-		)
-		(uuid "507fe8d1-1ade-4480-869d-4412e895eb9d")
-	)
-	(text "PROJECT NOTES"
-		(exclude_from_sim no)
-		(at 159.385 128.905 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-				(color 53 60 207 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "61efacb2-f53d-4dc5-a318-fe49775db03e")
-	)
-	(text "Board mounts"
-		(exclude_from_sim no)
-		(at 183.896 33.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-		)
-		(uuid "d8cca02a-fc0d-41ea-9178-22d361813961")
-	)
-	(text "Infrared Thermometer LED"
-		(exclude_from_sim no)
-		(at 38.1 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "fc657c44-fb1c-471b-8ba5-de8c062fb4ed")
 	)
 	(label "Safe"
 		(at 127 35.56 0)
@@ -17019,4 +17087,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

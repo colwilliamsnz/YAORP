@@ -13,6 +13,9 @@ fp-info-cache
 # Misc
 *.bak
 
+#FreeCAD
+*.FCBak
+
 # Executables
 *.exe
 *.out

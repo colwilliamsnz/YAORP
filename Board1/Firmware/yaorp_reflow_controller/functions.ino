@@ -2,7 +2,9 @@
 //returns true if update happened
 bool getTemperature() {
   if ((millis() - lastTempUpdate) > TEMP_READ_DELAY) {
-    temperature = thermocouple.readCelsius();
+    // temperature = thermocouple.readCelsius(); // this is for the MAX thermocouple sensor
+    temperature = mlx.getObjectTempCelsius(); // this is for the MLX infrared thermometer
+    
     lastTempUpdate = millis();
     return true;
   }
@@ -22,20 +24,20 @@ void updateTimer() {
 // Status LEDs
 void updateLEDs() {
   if (temperature > 40 && temperature < 80) {
-    ledc_stop(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_2, 0);  // stop flashing SAFE LED
-    ledcWrite(PIN_LED_WARN, 255);                        // set WARN LED to 100% duty cycle
+    digitalWrite(PIN_LED_WARN, HIGH);
+    digitalWrite(PIN_LED_SAFE, LOW);
   } else if (temperature > 80) {
-    ledc_stop(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_2, 0);  // stop flashing WARN LED
-    ledcWrite(PIN_LED_WARN, 128);                        // set SAFE LED to 100% duty cycle
+    digitalWrite(PIN_LED_WARN, HIGH);
+    digitalWrite(PIN_LED_SAFE, LOW);
   } else {
-    ledc_stop(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_1, 0);  // stop flashing WARN LED
-    ledcWrite(PIN_LED_SAFE, 255);                        // set SAFE LED to 100% duty cycle
+    digitalWrite(PIN_LED_WARN, LOW);
+    digitalWrite(PIN_LED_SAFE, HIGH);
   }
 }
 
 void disableSSR() {
   setTemp = 0;
-  ledc_stop(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_7, 0);
+  ledc_stop(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_7, 0);
 }
 
 void updateSSR(double PWM) {
@@ -83,7 +85,7 @@ void processModes() {
 
     // Soak countdown timer is complete, move to reflow
     if (timerMode == 0) {
-      timerMode = 15;  // start
+      timerMode = 20;  // start
       mode = 3;        // Reflow mode
       boolAtSetPoint = false;
     }
@@ -208,6 +210,7 @@ void soundClick() {
 
 void ui_boot() {
   // Render boot screen and play "on" tone from piezo
+  u8g2.setBusClock(100000);
   u8g2.begin();
   u8g2.enableUTF8Print();
 

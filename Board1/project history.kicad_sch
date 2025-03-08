@@ -1,16 +1,138 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "58678810-a1ae-4bf1-b11b-108993035dde")
 	(paper "A4")
 	(title_block
 		(title "Revision History")
-		(date "2025-02-19")
-		(rev "1.1")
+		(date "2025-03-08")
+		(rev "1.2")
 		(company "Wattle Labs")
 	)
 	(lib_symbols)
+	(text "19-Feb-2025 - Rev 1.1\nStatus: Prototype"
+		(exclude_from_sim no)
+		(at 25.4 33.02 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b186278-0dab-4a47-81c2-53263d2b90fa")
+	)
+	(text "5-Mar-2025 - Rev 1.2\nStatus: Prototype"
+		(exclude_from_sim no)
+		(at 109.22 33.02 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "46d53000-4ca6-4d5f-b1e7-02cba2963c7a")
+	)
+	(text "xx-xxx-20xx\nStatus: ???"
+		(exclude_from_sim no)
+		(at 198.12 33.02 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e642c396-9621-490f-b006-fbe1d3c4a518")
+	)
+	(text_box "* Removed LED for SSR indicator from board2 (and board1 pin header). It was found that this LED reduced the SSR outout and became impossible to get PTC plate to 200degC. Plan to implement a \"power meter\" bar graph in the OLED to show SSR drive.\n\n* Added InfraRed temperature sensor (MLX90614ESF) to board2 (and board1 pin header). This will read temperature from beneath the hot plate (and is somewhat of an experiement therefore the thermocouple driver remains on board).\n\n* Added ferrite beads to thermocouple inputs to reduce potential for EMI to upset temperature readings."
+		(exclude_from_sim no)
+		(at 25.4 38.1 0)
+		(size 76.2 154.94)
+		(margins 0.9524 0.9524 0.9524 0.9524)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "32badec6-c8c6-4b35-bdb0-1cba4e204fa7")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 12.065 12.065 0)
+		(size 273.05 13.335)
+		(margins 2.2499 2.2499 2.2499 2.2499)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.375)
+			)
+		)
+		(uuid "58cc4355-d97f-4860-9675-f6989c4253e8")
+	)
+	(text_box ""
+		(exclude_from_sim no)
+		(at 200.66 38.1 0)
+		(size 81.28 142.24)
+		(margins 0.9524 0.9524 0.9524 0.9524)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e6b85207-d86a-42b7-be2a-1e4ca9ab7743")
+	)
+	(text_box "* Migrate to KiCad 9.\n\n* Resolved ERC warnings on schematic and PCB.\n\n* Fixed missing ground connection for Reset switch.\n\n* Updated font size on pin header labels (JLCPCB was unable to print them at 1x1mm).\n\n* Updated bulk capacitor for the ESP32 module from 10u to 22u 16V (following Espressif best practise). Previous 10u cap had the board not booting reliably due to brownout.\n\n* Updated SSR to a zero crossing type to suit the PTCs resistive load.\n\n* Removed MAX31855 thermocouple chip and associated components. In practise the infrared thermometer performs better.\n\n* Updated FAN MOSFET drive circuit with a DGD0280WT MOSFET driver IC."
+		(exclude_from_sim no)
+		(at 109.22 38.1 0)
+		(size 81.28 142.24)
+		(margins 0.9524 0.9524 0.9524 0.9524)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e8bf6853-1e36-4c76-81a3-f0c4a64a382e")
+	)
 	(polyline
 		(pts
 			(xy 22.86 25.4) (xy 22.86 193.04)
@@ -76,123 +198,5 @@
 			(color 132 132 132 1)
 		)
 		(uuid "da3e5a18-f954-4acb-ba20-c67bc43adde9")
-	)
-	(text_box "* Removed LED for SSR indicator from board2 (and board1 pin header). It was found that this LED reduced the SSR outout and became impossible to get PTC plate to 200degC. Plan to implement a \"power meter\" bar graph in the OLED to show SSR drive.\n\n* Added InfraRed temperature sensor (MLX90614ESF) to board2 (and board1 pin header). This will read temperature from beneath the hot plate (and is somewhat of an experiement therefore the thermocouple driver remains on board).\n\n* Added ferrite beads to thermocouple inputs to reduce potential for EMI to upset temperature readings."
-		(exclude_from_sim no)
-		(at 25.4 38.1 0)
-		(size 76.2 154.94)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "32badec6-c8c6-4b35-bdb0-1cba4e204fa7")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 12.065 12.065 0)
-		(size 273.05 13.335)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 0.375)
-			)
-		)
-		(uuid "58cc4355-d97f-4860-9675-f6989c4253e8")
-	)
-	(text_box ""
-		(exclude_from_sim no)
-		(at 200.66 38.1 0)
-		(size 81.28 142.24)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "e6b85207-d86a-42b7-be2a-1e4ca9ab7743")
-	)
-	(text_box ""
-		(exclude_from_sim no)
-		(at 109.22 38.1 0)
-		(size 81.28 142.24)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "e8bf6853-1e36-4c76-81a3-f0c4a64a382e")
-	)
-	(text "19-Feb-2025 - Rev 1.1\nStatus: Prototype"
-		(exclude_from_sim no)
-		(at 25.4 33.02 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.25)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "3b186278-0dab-4a47-81c2-53263d2b90fa")
-	)
-	(text "xx-xxx-20xx\nStatus: ???"
-		(exclude_from_sim no)
-		(at 109.22 33.02 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.25)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "46d53000-4ca6-4d5f-b1e7-02cba2963c7a")
-	)
-	(text "xx-xxx-20xx\nStatus: ???"
-		(exclude_from_sim no)
-		(at 198.12 33.02 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.25)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "e642c396-9621-490f-b006-fbe1d3c4a518")
 	)
 )
