@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "3.3v DC Power Supply")
-		(date "2025-03-08")
+		(date "2025-03-10")
 		(rev "1.2")
 		(company "Wattle Labs")
 	)

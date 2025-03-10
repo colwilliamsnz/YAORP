@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "ESP32-S3-WROOM-1 Module")
-		(date "2025-03-08")
+		(date "2025-03-10")
 		(rev "1.2")
 		(company "Wattle Labs")
 	)
@@ -1944,28 +1944,6 @@
 			)
 		)
 		(uuid "5abfab13-bc2d-4a77-9df0-96d94b5e0493")
-	)
-	(text_box "DESIGN NOTE:\n\nThis could be removed in favour of a USB connector however cost uplift and slightly more complex to route. The firmware is unlikely to be updated often and after initial flash, could be done OTA."
-		(exclude_from_sim no)
-		(at 187.96 83.185 0)
-		(size 59.055 14.605)
-		(margins 1.2025 1.2025 1.2025 1.2025)
-		(stroke
-			(width 0.5)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "1538501b-d4f8-42b7-8c6b-8ab21bc344bc")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)

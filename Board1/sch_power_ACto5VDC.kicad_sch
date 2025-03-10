@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Mains to 5v DC Power Supply")
-		(date "2025-03-08")
+		(date "2025-03-10")
 		(rev "1.2")
 		(company "Wattle Labs")
 	)
@@ -2116,10 +2116,10 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "DESIGN NOTE:\n\nSkipped pins 2&4 on J1 is intended to provide additional trace clearance VS finding a larger part (copper has been removed from PCB holes)."
+	(text_box "DESIGN NOTE:\n\nSkipped pins 2&4 on J1 is intended to provide additional trace clearance VS finding a larger part.\n\nCopper has been removed from PCB holes."
 		(exclude_from_sim no)
 		(at 83.82 68.58 0)
-		(size 48.26 15.24)
+		(size 48.26 16.51)
 		(margins 1.2025 1.2025 1.2025 1.2025)
 		(stroke
 			(width 0.5)
@@ -2183,7 +2183,7 @@
 	)
 	(text_box "DESIGN NOTE:\n\nResolves issues with KiCad ERC"
 		(exclude_from_sim no)
-		(at 243.84 132.08 0)
+		(at 220.98 154.94 0)
 		(size 36.83 12.7)
 		(margins 1.2025 1.2025 1.2025 1.2025)
 		(stroke
@@ -3922,7 +3922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "EMI noise supression"
+		(property "Description" "10000 pF Film Capacitor 300V 800V Polypropylene (PP), Metallized Radial"
 			(at 151.13 54.61 0)
 			(effects
 				(font
@@ -3940,7 +3940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey_PN" ""
+		(property "Digikey_PN" "BFC233841103-ND"
 			(at 151.13 54.61 0)
 			(effects
 				(font

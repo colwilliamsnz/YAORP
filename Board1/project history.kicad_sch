@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Revision History")
-		(date "2025-03-08")
+		(date "2025-03-10")
 		(rev "1.2")
 		(company "Wattle Labs")
 	)
@@ -24,7 +24,7 @@
 		)
 		(uuid "3b186278-0dab-4a47-81c2-53263d2b90fa")
 	)
-	(text "5-Mar-2025 - Rev 1.2\nStatus: Prototype"
+	(text "8-Mar-2025 - Rev 1.2\nStatus: Prototype"
 		(exclude_from_sim no)
 		(at 109.22 33.02 0)
 		(effects

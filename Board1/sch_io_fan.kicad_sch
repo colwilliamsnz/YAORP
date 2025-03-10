@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Cooling Fan Driver")
-		(date "2025-03-08")
+		(date "2025-03-10")
 		(rev "1.2")
 		(company "Wattle Labs")
 	)
@@ -1677,7 +1677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey_PN" ""
+		(property "Digikey_PN" "31-DGD0280WT-7CT-ND"
 			(at 138.43 64.77 0)
 			(effects
 				(font
@@ -2010,7 +2010,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 121.92 63.5 0)
 			(effects
 				(font
@@ -2037,7 +2037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1uF Ceramic 25V X5R"
+		(property "Description" "100nF Ceramic 16V X5R"
 			(at 119.38 62.23 0)
 			(effects
 				(font
@@ -2055,7 +2055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey_PN" ""
+		(property "Digikey_PN" "399-C0603C104K4RACTUCT-ND"
 			(at 119.38 62.23 0)
 			(effects
 				(font
@@ -2096,7 +2096,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "100"
 			(at 154.94 58.42 90)
 			(effects
 				(font
@@ -2122,7 +2122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RES 100 OHM 1% 1/10W 0603"
 			(at 154.94 58.42 0)
 			(effects
 				(font
@@ -2140,7 +2140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey_PN" ""
+		(property "Digikey_PN" "541-3951-1-ND"
 			(at 154.94 58.42 0)
 			(effects
 				(font

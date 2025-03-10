@@ -2,9 +2,8 @@
 //returns true if update happened
 bool getTemperature() {
   if ((millis() - lastTempUpdate) > TEMP_READ_DELAY) {
-    // temperature = thermocouple.readCelsius(); // this is for the MAX thermocouple sensor
-    temperature = mlx.getObjectTempCelsius(); // this is for the MLX infrared thermometer
-    
+    temperature = mlx.getObjectTempCelsius();
+
     lastTempUpdate = millis();
     return true;
   }
@@ -23,12 +22,24 @@ void updateTimer() {
 
 // Status LEDs
 void updateLEDs() {
+  unsigned long currentMillis = millis();
+
   if (temperature > 40 && temperature < 80) {
     digitalWrite(PIN_LED_WARN, HIGH);
     digitalWrite(PIN_LED_SAFE, LOW);
   } else if (temperature > 80) {
-    digitalWrite(PIN_LED_WARN, HIGH);
-    digitalWrite(PIN_LED_SAFE, LOW);
+    if (currentMillis - lastWarnLEDUpdate >= 250) {
+      lastWarnLEDUpdate = currentMillis;
+
+      if (warnLEDState == LOW) {
+        warnLEDState = HIGH;
+      } else {
+        warnLEDState = LOW;
+      }
+      digitalWrite(PIN_LED_WARN, warnLEDState);
+      digitalWrite(PIN_LED_SAFE, LOW);
+    }
+
   } else {
     digitalWrite(PIN_LED_WARN, LOW);
     digitalWrite(PIN_LED_SAFE, HIGH);
@@ -300,7 +311,7 @@ void ui_heating(char *phase, int temp_target, int temp_current, int timer) {
   u8g2.drawStr(100, 8, "T:");
   u8g2.drawStr(110, 8, buffer);
 
-  if (timer > 0) { // only display a timer if one is active
+  if (timer > 0) {            // only display a timer if one is active
     itoa(timer, buffer, 10);  // convert int to string
     u8g2.drawStr(58, 8, buffer);
   }
